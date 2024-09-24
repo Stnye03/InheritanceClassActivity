@@ -13,15 +13,22 @@ std::string getInput(const std::string& prompt) {
     return input;
 }
 
-Animal* animal = nullptr;
+void addAnimalToShelter(Shelter& shelter, const std::string& type) {
+    std::string name = getInput("Enter " + type + "'s name: ");
+    int age = std::stoi(getInput("Enter " + type + "'s age: "));
+    std::string breed = getInput("Enter " + type + "'s breed: ");
+
+    Animal* animal = nullptr;
     if (type == "Dog") {
         animal = Dog(name, age, breed);
     } else if (type == "Cat") {
         animal = Cat(name, age, breed);
     }
+
+    if (animal) {
+        shelter.addAnimal(animal);
+    }
 }
-
-
 
 int main() {
     Shelter shelter;
