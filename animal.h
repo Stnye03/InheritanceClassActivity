@@ -1,6 +1,8 @@
 #ifndef _animal_h
 #define _animal_h
 
+#include <string>
+
 class Animal{
 
 public:	
@@ -10,7 +12,7 @@ public:
 
 	Animal();
 	~Animal();
-	void displayInfo(){};
+	virtual void displayInfo(std::string name, int age, std::string breed){};
 	std::string getType(std::string breed){};
 };
 
@@ -28,5 +30,3 @@ Cat(std::string name, int age, std::string breed);
 
 virtual displayInfo(std::string breed);
 };
-
-#endif
