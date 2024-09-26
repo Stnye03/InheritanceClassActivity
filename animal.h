@@ -6,10 +6,27 @@ class Animal{
 public:	
 	std::string name;
 	int age;
-	std::string aniType;
+	std::string type;
 
 	Animal();
-	virtual ~Animal();
-	void displayInfo()
-	std::string getType()
-}
+	~Animal();
+	void displayInfo(){};
+	std::string getType(std::string type){};
+};
+
+
+class Dog : public Animal {
+std::string breed;
+Dog();
+
+virtual displayInfo(std::string breed);
+};
+
+class Cat : public Animal{
+std::string breed;
+Cat();
+
+virtual displayInfo(std::string breed);
+};
+
+#endif
