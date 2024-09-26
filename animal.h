@@ -17,14 +17,14 @@ public:
 
 class Dog : public Animal {
 std::string breed;
-Dog();
+Dog(std::string name, int age, std::string breed);
 
 virtual displayInfo(std::string breed);
 };
 
 class Cat : public Animal{
 std::string breed;
-Cat();
+Cat(std::string name, int age, std::string breed);
 
 virtual displayInfo(std::string breed);
 };
