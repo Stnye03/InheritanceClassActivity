@@ -6,12 +6,12 @@ class Animal{
 public:	
 	std::string name;
 	int age;
-	std::string type;
+	std::string breed;
 
 	Animal();
 	~Animal();
 	void displayInfo(){};
-	std::string getType(std::string type){};
+	std::string getType(std::string breed){};
 };
 
 
