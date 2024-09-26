@@ -1,5 +1,5 @@
 #ifndef _animal_h
-#define _
+#define _animal_h
 
 class Animal{
 
